@@ -352,6 +352,13 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   gap: 24px;
   grid-template-columns: 1fr;
 }
+.services-left, .services-right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.section-head-left { text-align: left; }
+.section-head-left p { margin: 0; }
 .service-card {
   background: var(--white);
   border: 1px solid var(--border);
@@ -403,23 +410,59 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   border-radius: var(--radius-sm);
   padding: 16px;
 }
+.booking-mockup-top {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  margin-bottom: 14px;
+  height: 140px;
+}
+.booking-mockup-photo {
+  flex: 1.3;
+  min-width: 0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.booking-mockup-photo img { width: 100%; height: 100%; object-fit: cover; }
+.booking-mockup-cal {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
 .booking-mockup-cal-head {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--white);
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+}
+.booking-mockup-cal-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  margin-bottom: 3px;
+}
+.booking-mockup-cal-weekdays span {
+  text-align: center;
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: #8aa89e;
 }
 .booking-mockup-cal-grid {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 4px;
-  margin-bottom: 14px;
+  gap: 2px;
 }
 .booking-mockup-cal-grid span {
   aspect-ratio: 1;
-  border-radius: 4px;
+  border-radius: 3px;
   background: rgba(255, 255, 255, 0.08);
-  font-size: 0.65rem;
+  font-size: 0.5rem;
   color: #b9d3ce;
   display: flex;
   align-items: center;
@@ -437,9 +480,21 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   margin-bottom: 12px;
 }
 .booking-mockup-fields span {
-  height: 30px;
+  display: flex;
+  align-items: center;
+  height: 34px;
+  padding: 0 10px;
   border-radius: 6px;
   background: rgba(255, 255, 255, 0.9);
+}
+.booking-mockup-fields span i {
+  font-style: normal;
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .booking-mockup-btn {
   background: var(--coral-600);
@@ -901,6 +956,14 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   .more-projects-row { grid-template-columns: repeat(2, 1fr); }
   .trust-items { grid-template-columns: repeat(2, 1fr); }
   .cta-banner { grid-template-columns: 1fr; }
+  .service-card-featured {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+  .service-card-featured-text { flex: 0 0 170px; }
+  .booking-mockup { flex: 1; margin-top: 0; min-width: 0; }
 }
 
 @media (min-width: 860px) {
@@ -935,10 +998,10 @@ p { margin: 0 0 1em; color: var(--text-muted); }
   }
   .ps-grid { grid-template-columns: repeat(2, 1fr); }
   .services-bento {
-    grid-template-columns: 1.4fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1.6fr 1fr;
+    align-items: stretch;
   }
-  .service-card-featured { grid-column: 1; grid-row: 1 / 3; display: flex; flex-direction: column; justify-content: center; }
+  .service-card-featured { flex: 1; }
   .footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
   .trust-items { grid-template-columns: repeat(4, 1fr); gap: 32px; }
   .trust-item { flex-direction: column; text-align: center; gap: 10px; }

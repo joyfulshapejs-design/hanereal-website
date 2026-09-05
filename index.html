@@ -61,8 +61,31 @@
           <a href="#work" class="btn btn-secondary">See our work</a>
         </div>
       </div>
-      <div class="hero-visual">
-        <img src="images/hero-sunset-pool.webp" alt="Sunset over a resort infinity pool overlooking the ocean">
+    </div>
+    <div class="hero-bg">
+      <img src="images/hero-sunset-pool.webp" alt="Sunset over a resort infinity pool overlooking the ocean">
+    </div>
+    <div class="container hero-trust-wrap">
+      <div class="trust-bar reveal">
+        <span class="trust-label">Trusted by property owners</span>
+        <div class="trust-items">
+          <div class="trust-item">
+            <span class="trust-icon"><i class="ti ti-trending-up" aria-hidden="true"></i></span>
+            <span>Increase Direct Bookings</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="ti ti-tag" aria-hidden="true"></i></span>
+            <span>Lower OTA Commissions</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="ti ti-stack-2" aria-hidden="true"></i></span>
+            <span>Full System &amp; Support</span>
+          </div>
+          <div class="trust-item">
+            <span class="trust-icon"><i class="ti ti-rocket" aria-hidden="true"></i></span>
+            <span>Results-Driven Approach</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -76,18 +99,18 @@
       <div class="ps-grid">
         <div class="ps-card problem">
           <h3><i class="ti ti-alert-triangle" aria-hidden="true"></i> Without HaneReal</h3>
-          <ul>
-            <li>Booking.com and Agoda take 15 to 25 percent commission on every reservation</li>
-            <li>Guests book by phone or Messenger, if they book at all after hours</li>
-            <li>No dashboard to see occupancy, rates, or guest data in one place</li>
+          <ul class="check-list">
+            <li><i class="ti ti-x" aria-hidden="true"></i><span>Booking.com and Agoda take 15 to 25 percent commission on every reservation</span></li>
+            <li><i class="ti ti-x" aria-hidden="true"></i><span>Guests book by phone or Messenger, if they book at all after hours</span></li>
+            <li><i class="ti ti-x" aria-hidden="true"></i><span>No dashboard to see occupancy, rates, or guest data in one place</span></li>
           </ul>
         </div>
         <div class="ps-card solution">
           <h3><i class="ti ti-circle-check" aria-hidden="true"></i> With HaneReal</h3>
-          <ul>
-            <li>A direct link guests can book from, commission-free</li>
-            <li>Guests can book anytime, straight from your own website</li>
-            <li>One dashboard to run rooms, rates, and reservations once direct bookings start coming in</li>
+          <ul class="check-list">
+            <li><i class="ti ti-check" aria-hidden="true"></i><span>A direct link guests can book from, commission-free</span></li>
+            <li><i class="ti ti-check" aria-hidden="true"></i><span>Guests can book anytime, straight from your own website</span></li>
+            <li><i class="ti ti-check" aria-hidden="true"></i><span>One dashboard to run rooms, rates, and reservations once direct bookings start coming in</span></li>
           </ul>
         </div>
       </div>
@@ -106,16 +129,31 @@
           <div class="service-icon"><i class="ti ti-calendar-event" aria-hidden="true"></i></div>
           <h3>Direct Booking Page</h3>
           <p>A direct link guests can book from: real-time availability, transparent pricing, and a reservation flow built to convert, so they book with you instead of forwarding the search to an OTA.</p>
+          <div class="booking-mockup" aria-hidden="true">
+            <div class="booking-mockup-cal">
+              <div class="booking-mockup-cal-head">May 2026</div>
+              <div class="booking-mockup-cal-grid">
+                <span></span><span></span><span class="is-selected">14</span><span class="is-selected">15</span><span class="is-selected">16</span><span></span><span></span>
+              </div>
+            </div>
+            <div class="booking-mockup-fields">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="booking-mockup-btn">Check Availability</div>
+          </div>
+          <a href="#work" class="service-learn-more">Learn more <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="service-card reveal">
           <div class="service-icon"><i class="ti ti-world" aria-hidden="true"></i></div>
           <h3>Website</h3>
           <p>A marketing site for your rooms, facilities, and story, built to turn visitors into guests, not bounce them to an OTA listing.</p>
+          <a href="#work" class="service-learn-more">Learn more <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
         </div>
         <div class="service-card reveal">
           <div class="service-icon"><i class="ti ti-device-desktop" aria-hidden="true"></i></div>
           <h3>PMS Dashboard & Database</h3>
           <p>The operations layer once bookings start coming in: manage rooms, rates, and reservations from one secure Property Management System (PMS).</p>
+          <a href="#work" class="service-learn-more">Learn more <i class="ti ti-arrow-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -215,9 +253,14 @@
   <section class="section section-alt" id="faq">
     <div class="container">
       <div class="section-head reveal">
-        <h2>FAQ</h2>
+        <span class="eyebrow">FAQ</span>
+        <h2>Common questions</h2>
       </div>
-      <div class="faq-list">
+      <div class="faq-grid">
+      <div class="faq-image reveal">
+        <img src="images/jvergara/home-hero-hallway.webp" alt="Interior hallway of a HaneReal partner resort" loading="lazy">
+      </div>
+      <div class="faq-list reveal">
         <div class="faq-item">
           <button class="faq-question">How long does a project take?
             <span class="chevron">⌄</span>
@@ -249,18 +292,25 @@
           <div class="faq-answer"><div class="faq-answer-inner"><p>In most cases, yes. We'll walk through integration options during your consultation.</p></div></div>
         </div>
       </div>
+      </div>
     </div>
   </section>
 
   <!-- 7. Consultation Request Form -->
   <section class="section" id="consultation">
     <div class="container">
-      <div class="section-head reveal">
-        <span class="eyebrow">Let's talk</span>
-        <h2>Book a free consultation</h2>
-        <p>Tell us a bit about your property. We'll follow up with a custom quote, no obligation.</p>
+      <div class="cta-banner reveal">
+        <div class="cta-banner-copy">
+          <span class="eyebrow eyebrow-light">Let's talk</span>
+          <h2>Book a free consultation</h2>
+          <p>Tell us a bit about your property. We'll show you how a custom system can fill more rooms.</p>
+        </div>
+        <div class="cta-banner-action">
+          <a href="#consultFormAnchor" class="btn btn-primary">Book a Free Consultation</a>
+          <p>No obligation. No pushy sales. Just a clear plan.</p>
+        </div>
       </div>
-      <div class="consult-wrap reveal">
+      <div class="consult-wrap reveal" id="consultFormAnchor">
         <form id="consultForm">
           <div class="form-row two-col">
             <div class="form-field">
@@ -319,7 +369,7 @@
           <input type="hidden" name="subject" value="New consultation request from HaneReal site">
           <button type="submit" class="btn btn-primary">Request a Consultation</button>
           <p class="form-note">We'll reply within 1-2 business days with next steps.</p>
-          <p class="form-status" id="formStatus"></p>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </div>
